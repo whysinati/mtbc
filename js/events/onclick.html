@@ -1,0 +1,35 @@
+<div id="demo"></div>
+<!-- <button onclick="document.getElementById('demo').innerHTML = Date()">What time is it?</button> -->
+
+<!-- <button onclick="showDate('demo');">What time is it?</button>
+<script>
+  function showDate(element) {
+     document.getElementById(element).innerHTML = Date();
+  }
+</script> -->
+
+<!-- <button id="time">What time is it?</button>
+<script>
+  function showDate(element) {
+     document.getElementById(element).innerHTML = Date();
+  }
+
+  // Function to add event listener to button#time
+  var btn = document.getElementById("time");
+  btn.addEventListener("click", function(){
+      showDate('demo');
+  });
+</script> -->
+
+<button id="time">What time is it?</button>
+<script>
+  function showDate(element) {
+     document.getElementById(element).innerHTML = Date();
+  }
+
+  // Function to add event listener to button#time
+  var btn = document.getElementById("time");
+  btn.addEventListener("click", ()=>{
+    showDate('demo');
+  });
+</script>
